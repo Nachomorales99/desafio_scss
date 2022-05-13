@@ -1,0 +1,43 @@
+@import "variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    #header {
+        h2 {
+            color: $color-primary;
+            font-family: 'Times New Roman', Times, serif;
+            text-shadow: 1px 1px 2px $color-primary;
+            margin: 1.5rem;
+        }
+    }
+
+    .carru {
+        margin-bottom: 30px;
+
+        img {
+            @media (min-width:1200px) {
+                height: 400px;
+            }
+        }
+    }
+}
+
+@import "nav";
+@import "ropa";
+@import "equipo";
+@import "talles";
+@import "mayorista";
+@import "us";
+@import "footer";

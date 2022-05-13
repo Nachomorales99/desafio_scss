@@ -1,0 +1,20 @@
+#form {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: $color-fifty;
+    color: $color-secondary;
+
+        option {
+            background-color: $color-fifty;
+            color: $color-secondary;
+    } 
+
+    .btn {
+        margin: 1rem;
+        background: $color-primary;
+        box-shadow: 2%;
+        border-radius: 10%;
+        border-color: $color-fifty;
+
+    }
+}

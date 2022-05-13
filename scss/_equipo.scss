@@ -1,0 +1,49 @@
+#equipo {
+    margin: 70px;
+    width: 100%;
+
+    .team {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            border-radius: 10%;
+            box-shadow: 0 0 20px $color-third;
+
+            &:hover {
+                filter: saturate(180%);
+            }
+        }
+    }
+
+    #use {
+        color: $color-primary;
+        font-family: 'Times New Roman', Times, serif;
+        text-shadow: 1px 1px 2px $color-primary;
+    }
+
+    p {
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 500;
+        text-align: center;
+    }
+
+}
+
+@media (max-width:600px) {
+    #equipo {
+        justify-content: center;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+
+    .team {
+        img {
+            margin: 1.2rem;
+        }
+    }
+
+}

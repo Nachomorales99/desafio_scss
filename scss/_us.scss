@@ -1,3 +1,8 @@
+.titulo4{
+    @extend .portada; 
+    color: $portada4;
+}
+
 #nosotros {
     margin: 70px; 
 
@@ -6,10 +11,10 @@
     }
 
     p {
-        font-size: 18px;
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: 500;
-        text-align: center;
+        @include textos (20px, 500, center, 'Times New Roman');
+        background-color: rgba(85, 182, 76, 0.534);
+        border-radius: 3%;
+        color: $color-primary;
         margin-top: 5rem;
     } 
 } 

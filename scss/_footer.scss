@@ -4,7 +4,7 @@ footer {
     background-size: cover;
     text-align: center;
 
-    .footer-title {
+    .footer-title { 
         padding-top: 1rem;
         color: $color-secondary;
         display: flex;
@@ -19,14 +19,38 @@ footer {
         text-align: center;
         padding-left: 1.5rem;
         gap: 1em;
-        font-size: 1.5rem;
-        color: $color-secondary;
+        font-size: 2rem; 
+
+        //Map 
+
+        $redes: (twitter: #00acee,
+                whatsapp: #00bb2d,
+                facebook: #3b5998,
+                instagram: #dd2a7b,
+                mail: #ea4335,
+            );
+
+        @each $red,
+        $color in $redes {
+            .red-#{$red} {
+                color: $color;
+            }
+        } 
+
+        .redes-soc{
+
+            &:hover {
+                transition: 0.75s;
+                font-size: 2.2rem;
+                transform: scale(1.1);
+            }
+        }
     }
 
-    #trans_1 {  
+    #trans_1 {
         display: block;
         padding: 0.2rem 0.2rem;
-        font-size: 18px; 
+        font-size: 18px;
         text-decoration: none;
         color: $color-secondary;
 
@@ -36,18 +60,7 @@ footer {
             font-size: 1.3rem;
             transform: scale(1);
         }
-    }
-
-    #trans_2 {
-        color: $color-secondary;
-
-        &:hover {
-            transition: 0.75s;
-            color: $color-fourth;
-            font-size: 1.6rem;
-            transform: scale(1.1);
-        }
-    }
+    } 
 
     .footer-logo {
         display: flex;
@@ -61,10 +74,6 @@ footer {
 
     #pie {
         font-size: 1.5rem;
-        color: $color-secondary;
-    } 
-
-    .redes-soc {
         color: $color-secondary;
     }
 }

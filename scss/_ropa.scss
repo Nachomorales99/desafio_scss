@@ -1,3 +1,13 @@
+.titulo1{
+    @extend .portada; 
+    color: $portada1;
+} 
+
+.titulo2{
+    @extend .portada; 
+    color: $portada2;
+}
+
 .card {
     margin: auto;
     margin-top: 1rem;
@@ -59,5 +69,12 @@
 
     .btn{
         margin: 17px;
-    }
+
+        &:hover{
+            transition: 0.75s;
+            font-size: 13px;
+        }
+    } 
+
+    
 }

@@ -10,10 +10,9 @@ body {
   height: 100vh;
   justify-content: center;
   align-items: center; }
-  body #header h2 {
-    color: #000000;
+  body .portada, body .titulo1, body .titulo2, body .titulo5, body .titulo3, body .titulo4 {
     font-family: 'Times New Roman', Times, serif;
-    text-shadow: 1px 1px 2px #000000;
+    text-shadow: 1px 1px 2px;
     margin: 1.5rem; }
   body .carru {
     margin-bottom: 30px; }
@@ -35,6 +34,12 @@ nav {
       transition: 0.75s;
       color: #333;
       font-size: 20px; }
+
+.titulo1 {
+  color: #5e0404; }
+
+.titulo2 {
+  color: #060686; }
 
 .card {
   margin: auto;
@@ -76,6 +81,12 @@ nav {
   justify-content: center; }
   .pags .btn {
     margin: 17px; }
+    .pags .btn:hover {
+      transition: 0.75s;
+      font-size: 13px; }
+
+.titulo5 {
+  color: #70700b; }
 
 #equipo {
   margin: 70px;
@@ -95,9 +106,12 @@ nav {
     text-shadow: 1px 1px 2px #000000; }
   #equipo p {
     font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
     font-weight: 500;
-    text-align: center; }
+    text-align: center;
+    font-family: "Times New Roman";
+    background-color: rgba(156, 185, 26, 0.596);
+    border-radius: 5%;
+    color: #000000; }
 
 @media (max-width: 600px) {
   #equipo {
@@ -157,6 +171,9 @@ nav {
     margin-bottom: 3rem;
     margin-top: 3rem; }
 
+.titulo3 {
+  color: #740774; }
+
 #form {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -172,15 +189,21 @@ nav {
     border-radius: 10%;
     border-color: #0e141a; }
 
+.titulo4 {
+  color: #0d6106; }
+
 #nosotros {
   margin: 70px; }
   #nosotros #carru_nosotros {
     border-radius: 5%; }
   #nosotros p {
-    font-size: 18px;
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
     font-weight: 500;
     text-align: center;
+    font-family: "Times New Roman";
+    background-color: rgba(85, 182, 76, 0.534);
+    border-radius: 3%;
+    color: #000000;
     margin-top: 5rem; }
 
 @media (max-width: 600px) {
@@ -210,8 +233,21 @@ footer {
     text-align: center;
     padding-left: 1.5rem;
     gap: 1em;
-    font-size: 1.5rem;
-    color: white; }
+    font-size: 2rem; }
+    footer .redes-sociales .red-twitter {
+      color: #00acee; }
+    footer .redes-sociales .red-whatsapp {
+      color: #00bb2d; }
+    footer .redes-sociales .red-facebook {
+      color: #3b5998; }
+    footer .redes-sociales .red-instagram {
+      color: #dd2a7b; }
+    footer .redes-sociales .red-mail {
+      color: #ea4335; }
+    footer .redes-sociales .redes-soc:hover {
+      transition: 0.75s;
+      font-size: 2.2rem;
+      transform: scale(1.1); }
   footer #trans_1 {
     display: block;
     padding: 0.2rem 0.2rem;
@@ -223,13 +259,6 @@ footer {
       color: #1c1c7c;
       font-size: 1.3rem;
       transform: scale(1); }
-  footer #trans_2 {
-    color: white; }
-    footer #trans_2:hover {
-      transition: 0.75s;
-      color: #1c1c7c;
-      font-size: 1.6rem;
-      transform: scale(1.1); }
   footer .footer-logo {
     display: flex;
     margin-top: 25px;
@@ -240,6 +269,4 @@ footer {
     justify-content: center; }
   footer #pie {
     font-size: 1.5rem;
-    color: white; }
-  footer .redes-soc {
     color: white; }

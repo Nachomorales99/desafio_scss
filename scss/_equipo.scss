@@ -1,3 +1,8 @@
+.titulo5{
+    @extend .portada; 
+    color: $portada5;
+}
+
 #equipo {
     margin: 70px;
     width: 100%;
@@ -24,12 +29,11 @@
     }
 
     p {
-        font-size: 20px;
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: 500;
-        text-align: center;
+        @include textos (20px, 500, center, 'Times New Roman');
+        background-color: rgba(156, 185, 26, 0.596);
+        border-radius: 5%;
+        color: $color-primary;
     }
-
 }
 
 @media (max-width:600px) {

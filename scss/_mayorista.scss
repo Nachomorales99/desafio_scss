@@ -1,3 +1,8 @@
+.titulo3{
+    @extend .portada;
+    color: $portada3;
+}
+
 #form {
     margin-top: 50px;
     margin-bottom: 50px;

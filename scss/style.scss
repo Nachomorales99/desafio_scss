@@ -14,13 +14,10 @@ body {
     justify-content: center;
     align-items: center;
 
-    #header {
-        h2 {
-            color: $color-primary;
-            font-family: 'Times New Roman', Times, serif;
-            text-shadow: 1px 1px 2px $color-primary;
-            margin: 1.5rem;
-        }
+    .portada {
+        font-family: 'Times New Roman', Times, serif;
+        text-shadow: 1px 1px 2px;
+        margin: 1.5rem;
     }
 
     .carru {
@@ -33,6 +30,14 @@ body {
         }
     }
 }
+
+//Mixin
+@mixin textos ($dimension, $grosor, $alineacion, $fuente) {
+    font-size: $dimension;
+    font-weight: $grosor;
+    text-align: $alineacion; 
+    font-family: $fuente;
+} 
 
 @import "nav";
 @import "ropa";
